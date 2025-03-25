@@ -9,10 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #000000; /* Changed to black */
+            color: #ffffff; /* Changed text color to white */
         }
         header {
-            background: #000000;
+            background: #35424a;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -31,7 +32,7 @@
             overflow: hidden;
         }
         .recipe {
-            background: #ffffff;
+            background: #ffffff; /* Keeping recipe background white for contrast */
             margin: 20px 0;
             padding: 20px;
             border-radius: 5px;
@@ -40,18 +41,22 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #000000;
+            background: #35424a;
             color: #ffffff;
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+        .submitter {
+            font-style: italic;
+            color: #555; /* Changed submitter text color for better visibility */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Phantom Works Recipe</h1>
+    <h1>Welcome to My Recipe Website</h1>
     <nav>
         <a href="#home">Home</a>
         <a href="#recipes">Recipes</a>
@@ -69,29 +74,32 @@
     <section id="recipes">
         <h2>Recipes</h2>
         <div class="recipe">
-            <h3>The Ken Special</h3>
+            <h3>Spaghetti Carbonara</h3>
             <h4>Ingredients:</h4>
             <ul>
-                <li>1 hot dog bun</li>
-                <li>2 Johnsonville Brats</li>
-		<li>8 oz Canned Tuna</li>
-               
+                <li>200g spaghetti</li>
+                <li>100g pancetta</li>
+                <li>2 large eggs</li>
+                <li>50g grated Parmesan cheese</li>
+                <li>Salt and pepper to taste</li>
             </ul>
             <h4>Instructions:</h4>
-            <p>Cook the brat and add tuna to the assembled hot dog and enjoy!</p>
+            <p>Cook the spaghetti. In a separate pan, cook the pancetta. Beat the eggs and mix with cheese. Combine everything and serve.</p>
+            <p class="submitter">Submitted by: John Doe</p> <!-- Submitter's name -->
         </div>
         <div class="recipe">
-            <h3>The Emmons</h3>
+            <h3>Chocolate Cake</h3>
             <h4>Ingredients:</h4>
             <ul>
-                <li>1 Kosher dog</li>
-                <li>1 hot bun</li>
-                <li>1 oz of cream cheese</li>
-                <li>1 Jalapeno</li>
-                <li>1 tablespoon of mustard</li>
+                <li>200g flour</li>
+                <li>200g sugar</li>
+                <li>100g cocoa powder</li>
+                <li>3 eggs</li>
+                <li>200ml milk</li>
             </ul>
             <h4>Instructions:</h4>
-            <p>Heat the kosher dog. Toast the bun. Spread cream cheese on bun. Cut up Jalapeno into 1/8 inch slices.Put jalapeno slices on hot dog. Then put mustard on hot dog</p>
+            <p>Mix all ingredients and bake at 180°C for 30 minutes.</p>
+            <p class="submitter">Submitted by: Jane Smith</p> <!-- Submitter's name -->
         </div>
     </section>
 
